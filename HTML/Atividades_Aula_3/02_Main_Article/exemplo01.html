@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 1</title>
+</head>
+<body>
+
+    <!-- 
+        TOPO DA PÁGINA (HEADER)
+        Se algo aparece em todas as páginas do site (como o logo, menu ou campo de busca), usamos o <header>.
+        Caso fique confuso, volte aos exemplos anteriores ou peça ajuda a um monitor.
+    -->
+    <header>
+        <img src="" alt="Logo Isabela Flores" />
+        <a href="#">Flores online</a>
+        <p>Floricultura BH</p>
+
+        <p>O que está procurando?</p>
+        <p>Para onde enviar?</p>
+
+        <!-- 
+            LINKS DE NAVEGAÇÃO (NAV)
+            Se os itens levam para outras páginas, usamos <nav>.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Entre em contato</a></li>
+                <li><a href="#">Seu carrinho (ícone)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        CONTEÚDO PRINCIPAL DA PÁGINA (MAIN)
+        O <main> vem logo após o <header> e representa o conteúdo atual da página.
+
+        DICA: 
+        Se eu clicar em um buquê, serei levado para outra página com mais detalhes.
+        Isso significa que os "cards" dos produtos são conteúdos independentes,
+        e por isso usamos <article> para cada um.
+        
+    -->
+    <main>
+
+    <!-- 
+        DICA:
+        Para saber se você deve usar a tag <article>, pense se aquele conteúdo 
+        consegue "existir sozinho" ou se depende de um conjunto maior para fazer sentido.
+
+        Por exemplo: uma descrição de uma reportagem geralmente faz parte de um contexto maior.
+        Se eu tirar um parágrafo dessa reportagem e colocar em outro lugar do site, 
+        ele provavelmente não vai fazer sentido sozinho — porque depende do restante do conteúdo.
+
+        Agora pense em um produto dentro de uma lista (como um buquê, celular, livro etc).
+        Esse produto já vem com nome, preço, imagem, link... ou seja, ele já se explica por si só.
+        Mesmo se eu copiar esse produto e colar em outro lugar do site, ele continua fazendo sentido.
+        Isso porque o conteúdo dele é independente — logo, usamos <article>.
+
+    -->
+
+
+        <!-- Produto 1 -->
+        <article>
+            <h2><a href="#">Buquê de Flores do Campo Grande</a></h2>
+            <p>Preço: R$139,80</p>
+            <p>Descrição breve sobre esse buquê, suas flores e características.</p>
+        </article>
+
+        <!-- Produto 2 -->
+        <article>
+            <h2><a href="#">Buquê de 12 Rosas Vermelhas</a></h2>
+            <p>Preço: R$139,90</p>
+            <p>Clássico buquê de rosas vermelhas, ideal para ocasiões românticas.</p>
+        </article>
+
+        <!-- Produto 3 -->
+        <article>
+            <h2><a href="#">Buquê de Girassóis</a></h2>
+            <p>Preço: R$149,90</p>
+            <p>Buquê alegre com girassóis, perfeito para presentear com positividade.</p>
+        </article>
+
+    </main>
+
+</body>
+</html>
