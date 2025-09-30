@@ -2,16 +2,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Menos de um terço da população brasileira tem acesso pleno à internet</title>
+    <title> Exemplo 01</title>
 </head>
 <body>
 
     <!-- 
-        Acesse o link abaixo:
+        Acesse o link a seguir:
         https://g1.globo.com/jornal-nacional/noticia/2022/03/18/menos-de-um-terco-da-populacao-brasileira-tem-acesso-pleno-a-internet-mostra-pesquisa.ghtml
 
-        Utilizamos um pouco do conteúdo como base.
-        Veja abaixo que não colocamos a reportagem completa, apenas uma estrutura resumida para fins didáticos.
+        Utilizamos parte do conteúdo como base, não colocamos a reportagem completa.
     -->
 
     <!-- TOPO DA PÁGINA -->
@@ -25,10 +24,14 @@
     <main>
 
         <!-- 
-            Toda a reportagem está dentro dessa section.
-            Cada parte da notícia que se relaciona com esse conteúdo estará dentro dela.
+            Toda a reportagem está contida dentro desta <section>.
+
+            Pense no seguinte: se a gente tira um parágrafo e coloca em outro lugar, 
+            ele perde o sentido, pois está inserido em um contexto — neste caso, o contexto onde ele descreve uma notícia.
+
+            Por isso, usamos a tag <section> para envolver todo o conteúdo relacionado.
         -->
-        <section>
+    <section>
 
             <h1>Menos de um terço da população brasileira tem acesso pleno à internet, mostra pesquisa</h1>
 
@@ -41,15 +44,11 @@
                 Por Jornal Nacional — 18/03/2022 21h38 — Atualizado há 3 anos
             </h6>
 
-            <!-- 
-                Dentro da section principal, podemos ter outras sections menores
-                que agrupam elementos relacionados entre si.
-            -->
-            <section>
-                <a href="#">Facebook da página</a>
-                <a href="#">WhatsApp da página</a>
-                <a href="#">Compartilhar link da notícia</a>
-            </section>
+            <ul>
+                <li><a href="#">Facebook da página</a></li>
+                <li><a href="#">WhatsApp da página</a></li>
+                <li><a href="#">Compartilhar link da notícia</a></li>
+            </ul>
 
             <p>
                 O acesso à internet no Brasil é um retrato muito fiel das desigualdades sociais no país. 
@@ -57,33 +56,49 @@
             </p>
 
             <!-- 
-                Essa section representa um grupo de links relacionados com o mesmo tema da reportagem.
-                Como são conteúdos que se complementam, podemos agrupá-los juntos.
+                Esta <section> representa um grupo de links relacionados ao mesmo tema da reportagem.
+                Como são conteúdos que se complementam, agrupamos todos juntos.
             -->
             <section>
-            
-                <!-- A <div> utilizamos para agrupar elementos quando queremos, por exemplo adicionar um estilo (CSS) ou interatividade (JavaScript)-->
-                <!-- Vamos entender melhor quando introduzirmos o CSS -->
-                    <ul>
+
+                <!-- 
+                    A tag <div> é usada aqui para agrupar os elementos da lista.
+                    Isso é útil quando quisermos aplicar um estilo (CSS) ou adicionar interatividade (JavaScript) a cada item.
+                    
+                    Vamos explorar isso melhor quando estudarmos CSS.
+                -->
+                <ul>
                     <div>
-                    <li><a href="#">Em 2019, Brasil tinha quase 40 milhões de pessoas sem acesso à internet, diz IBGE</a></li>
+                        <li>
+                            <a href="#">Em 2019, Brasil tinha quase 40 milhões de pessoas sem acesso à internet, diz IBGE</a>
+                        </li>
                     </div>
                     <div>
-                    <li><a href="#">30% dos domicílios no Brasil não têm acesso à internet; veja números que mostram dificuldades no ensino à distância</a></li>
+                        <li>
+                            <a href="#">30% dos domicílios no Brasil não têm acesso à internet; veja números que mostram dificuldades no ensino à distância</a>
+                        </li>
                     </div>
                     <div>
-                    <li><a href="#">Falta de internet de qualidade dificulta acesso dos mais pobres a benefícios sociais, revela pesquisa</a></li>
+                        <li>
+                            <a href="#">Falta de internet de qualidade dificulta acesso dos mais pobres a benefícios sociais, revela pesquisa</a>
+                        </li>
                     </div>
                 </ul>
             </section>
 
         </section>
-
     </main>
-   <!-- Nada mais do que o rodapé (final) da página.
-    Normalmente adicionamos informações de contato-->
+
+    <!-- 
+        Rodapé da página (<footer>)
+
+        Normalmente usamos o rodapé para exibir informações como:
+        - Contatos
+        - Direitos autorais
+        - Termos de uso, etc.
+    -->
     <footer>
-        <p> </p>
+        <p></p>
     </footer>
 
 </body>
